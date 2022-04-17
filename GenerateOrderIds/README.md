@@ -17,7 +17,12 @@ A bunch of functions for generating strings and a bit of modificatims to fit var
 - Function 3 requires you to have a database set up. 
 - Run the following sql satements to get started.
 
-'CREATE DATABASE phpKeys ;' 
-'CREATE TABLE keystring (keystringId int, keystringKey varchar(30));'
+```SQL
+CREATE DATABASE phpKeys ;
+
+CREATE TABLE keystring (keystringId int, keystringKey varchar(30));
+```
+CREATE DATABASE phpKeys ;
+CREATE TABLE keystring (keystringId int, keystringKey varchar(30));
 
 ### Cheers and goodluck !
