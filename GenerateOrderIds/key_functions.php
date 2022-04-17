@@ -46,15 +46,21 @@ function checkKey($conn, $randStr){
                 $keyExixts = false;
                 }
         }
-
+ return $keyExixts;
 }
 
-function generateKey(){
+function generateKey($conn){
     $keyLen = 8;
-    $str = "1234567890abcdefghijklmnopqrstuvwxyz@()/?";
+    $str = "1234567890abcdefghijklmnopqrstuvwxyz";
     $randStr = substr(str_shuffle($str), 0, $keyLen);
 
     $checkKeys = checkKey($conn, $randStr);
- 
+
+    while($checkKeys = true){
+        $randStr = substr(str_shuffle($str), 0, $keyLen);
+        $checkKeys = checkKey($conn, $randStr);  
+    }
+
+    return $randStr;
 }
 ?>
