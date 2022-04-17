@@ -22,7 +22,6 @@ CREATE DATABASE phpKeys ;
 
 CREATE TABLE keystring (keystringId int, keystringKey varchar(30));
 ```
-CREATE DATABASE phpKeys ;
-CREATE TABLE keystring (keystringId int, keystringKey varchar(30));
+- With the database you can test the third function
 
 ### Cheers and goodluck !
