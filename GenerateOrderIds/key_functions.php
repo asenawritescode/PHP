@@ -46,7 +46,7 @@ function checkKey($conn, $randStr){
                 $keyExixts = false;
                 }
         }
- return $keyExixts;
+return $keyExixts;
 }
 
 function generateKey($conn){
