@@ -12,10 +12,10 @@ A bunch of functions for generating strings and a bit of modificatims to fit var
 
 ## Usage
 
-- For the first 2 functions, you can copy the code from the key_functins.php file to the php snippet in the main.php file. Then test it.
+- For the first 2 functions, you can copy the code from the key_functions.php file to the php snippet in the main.php file. Then test it.
 
 - Function 3 requires you to have a database set up. 
-- Run the following sql satements to get started.
+- Run the following sql statements to get started.
 
 ```SQL
 CREATE DATABASE phpKeys ;
