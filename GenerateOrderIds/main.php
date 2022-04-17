@@ -11,7 +11,7 @@
 
         function checkKey($conn, $randStr){
             //SQL select all from the table "keys"
-            $sql = "SELECT * FROM keys";
+            $sql = "SELECT * FROM keystring";
             $result = mysqli_query($conn, $sql);
         
             while ($row = mysqli_fetch_assoc($result)) 

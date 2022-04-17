@@ -15,6 +15,9 @@ A bunch of functions for generating strings and a bit of modificatims to fit var
 - For the first 2 functions, you can copy the code from the key_functins.php file to the php snippet in the main.php file. Then test it.
 
 - Function 3 requires you to have a database set up. 
+- Run the following sql satements to get started.
 
-Cheers and goodluck !
- 
+'CREATE DATABASE phpKeys ;' 
+'CREATE TABLE keystring (keystringId int, keystringKey varchar(30));'
+
+### Cheers and goodluck !
