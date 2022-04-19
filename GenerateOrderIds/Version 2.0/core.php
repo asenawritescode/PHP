@@ -49,6 +49,71 @@ class key
     }
 
     // method 
+    public function generateId($len,$str,$type)
+    {
+        switch ($type) {
+
+            case 1:
+
+                $keyLen = $len;
+                $strvalue = $str;
+                $randStr = substr(str_shuffle($strvalue), 0, $keyLen);
+                return $randStr;
+                
+                break;
+
+            case 2:
+                
+                $randStr = uniqid();
+                $randStr1 = uniqid('SHOP'); //adds a prefix SHOP to string
+                $randStr2 = uniqid(true); // adds a punctuation and an extra string    
+                
+                //change the return var to what you need for prefix
+                return $randStr;
+            
+
+                break;
+            case 3:
+
+                $conn = mysqli_connect("localhost","root","","phpKeys");
+
+                function checkKey($conn, $randStr){
+                    //SQL select all from the table "keys"
+                    $sql = "SELECT * FROM keys";
+                    $result = mysqli_query($conn, $sql);
+
+                    while ($row = mysqli_fetch_assoc($result)) 
+                        {
+                            if($row['keystringKey'] == $randStr){ 
+                                $keyExixts = true;
+                                break;
+                            }else{
+                                $keyExixts = false;
+                                }
+                        }
+                return $keyExixts;
+                }
+
+                $keyLen = $len;
+                $strValue = $str;
+                $randStr = substr(str_shuffle($strValue), 0, $keyLen);
+            
+                $checkKeys = checkKey($conn, $randStr);
+            
+                while($checkKeys = true){
+                    $randStr = substr(str_shuffle($strValue), 0, $keyLen);
+                    $checkKeys = checkKey($conn, $randStr);  
+                }
+            
+                return $randStr;
+            
+                break;                
+            case 4:
+                # code...
+                // working pregress
+                break;                
+        }   
+    }
 }
 
 ?>
