@@ -2,7 +2,7 @@
 
 **Version 1.0.0**
 
-A bunch of functions for generating strings and a bit of modificatims to fit varius uses 
+A bunch of functions for generating strings and a bit of modifications to fit varius uses 
 
 ## Requirements 
 
