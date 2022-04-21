@@ -2,7 +2,7 @@
 
 **Version 1.0.0**
 
-This is a simple CRUD app built in procedural PHP buiild with the PDO extension for handling database operations.
+This is a simple CRUD app built in procedural PHP, built with the PDO extension for handling database operations.
 
 ## Requirements 
 
