@@ -45,6 +45,9 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `created`, `modifi
 (7, 'Earphone', 'You need this one if you love music.', 7, '2015-08-02 12:18:21', '2015-08-06 06:59:18'),
 (8, 'Pillow', 'Sleeping well is important.', 8.99, '2015-08-02 12:18:56', '2015-08-06 06:59:18');
 ```
+
+- Update the database connector file to your configurations
+
 - More of the data is being updated on the go as I progress with the project 
 
 ### Cheers and goodluck !
